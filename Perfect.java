@@ -1,3 +1,6 @@
+//James Yao
+//10/15/2026
+//Prints out a specific pet using the information the user puts in. It uses the factors season, color, name.
 import java.util.Scanner;
 
 public class Perfect{
@@ -8,8 +11,9 @@ public class Perfect{
         System.out.println("Enter your name: "); 
         String name = myObj.nextLine().toLowerCase();
 
-    if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0, 1)) == -1) {
-    System.out.println("Invalid name");            //this is a letter
+        if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0, 1)) == -1) {
+            System.out.println("Invalid name.");
+            return;           //this is a letter
 }
 
     System.out.println("Enter your favorite color (Either red, blue or green): ");  
@@ -20,7 +24,7 @@ public class Perfect{
         System.out.println("Invalid color. Try again: ");
         color = myObj.nextLine().toLowerCase();
 }
- 
+
     System.out.println("Enter your favorite season (winter, spring, summer, fall): "); 
     String season = myObj.nextLine();
     season = season.toLowerCase();
@@ -32,31 +36,31 @@ public class Perfect{
 
 
     if (color.equals("blue") && season.equals("fall")) {
-        System.out.println( "Your Animal is a Alligator");
+        System.out.println(name + ", Your Animal is a Alligator");
     }
     else if (season.equals("spring") && color.equals("blue")) {
-        System.out.println( "Your Animal is a Ostrich");
+        System.out.println(name + ", Your Animal is a Ostrich");
     }
     else if (("aeiou".indexOf(name.substring(0,1)) == -1) && season.equals("winter") && color.equals("green") ) {
-        System.out.println( "Your Animal is a Giraffe");
+        System.out.println(name + ", Your Animal is a Giraffe");
     }
     else if (!season.equals ("fall") && color.equals("green") ){
-        System.out.println( "Your Animal is a Dog");
+        System.out.println(name + ", Your Animal is a Dog");
     }
     else if ((color.equals("red")) && ("aeiou".indexOf(name.substring(0,1)) == -1)){
-        System.out.println("Your Animal is a Panda");
+        System.out.println(name + ", Your Animal is a Panda");
     }    
     else if (color.equals("red")){
-        System.out.println("Your Animal is a Procupine");
+        System.out.println(name + ", Your Animal is a Procupine");
     }
     else if (season.equals("summer")) {
-        System.out.println("Your Animal is a Ponie ");
+        System.out.println(name + ", Your Animal is a Ponie ");
     }
     else if (("aeiou".indexOf(name.substring(0,1)) == -1) && (color.equals("blue")) && (!season.equals("summer")) && (!season.equals("fall"))) {
-        System.out.println("Your Animal is a Axolotl");
+        System.out.println(name + ", Your Animal is a Axolotl");
     }
     else {
-        System.out.println("Your Animal is a Pet Rock");
+        System.out.println(name + ", Your Animal is a Pet Rock");
     }
 
     
