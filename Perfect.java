@@ -20,7 +20,7 @@ public class Perfect{
         System.out.println("Invalid color. Try again: ");
         color = myObj.nextLine().toLowerCase();
 }
-
+ 
     System.out.println("Enter your favorite season (winter, spring, summer, fall): "); 
     String season = myObj.nextLine();
     season = season.toLowerCase();
